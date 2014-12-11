@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{D12CE75E-F3AF-62BF-16CA-136A47360C9C}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_6;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\vhAssets\Editor\AGChangeMaterialShader.cs" />
+     <Compile Include="Assets\vhAssets\Editor\AGGSPrefabs.cs" />
+     <Compile Include="Assets\vhAssets\Editor\AGOptimizeMaterialShader.cs" />
+     <Compile Include="Assets\vhAssets\Editor\AGPrefabs.cs" />
+     <Compile Include="Assets\vhAssets\Editor\AGSceneReport.cs" />
+     <Compile Include="Assets\vhAssets\Editor\ArtistExporterWindow.cs" />
+     <Compile Include="Assets\vhAssets\Editor\BuildPlayer.cs" />
+     <Compile Include="Assets\vhAssets\Editor\EditorCameraWindow.cs" />
+     <Compile Include="Assets\vhAssets\Editor\ImportSettingsWindow.cs" />
+     <Compile Include="Assets\vhAssets\Editor\SBMWindow.cs" />
+     <Compile Include="Assets\vhAssets\Editor\SceneAnalyzerWindow.cs" />
+     <Compile Include="Assets\vhAssets\Editor\SuggestionWindow.cs" />
+     <Compile Include="Assets\vhAssets\Editor\VHAssetPostProcessor.cs" />
+     <Compile Include="Assets\vhAssets\Editor\VHMenuItems.cs" />
+     <Compile Include="Assets\vhAssets\Machinima\Editor\CutsceneEditor.cs" />
+     <Compile Include="Assets\vhAssets\Machinima\Editor\CutsceneEditorInput.cs" />
+     <Compile Include="Assets\vhAssets\Machinima\Editor\CutsceneIO.cs" />
+     <None Include="Assets\vhAssets\shaders\AGDiffuseSpecularNormalDark.shader" />
+     <None Include="Assets\vhAssets\shaders\Decal2UVs.shader" />
+     <None Include="Assets\vhAssets\shaders\AGDiffuseSpecularNormal.shader" />
+     <None Include="Assets\vhAssets\shaders\AGDiffuseSpecularNormalAlpha.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{AB1120F8-DD87-F7B6-E8E9-6CB2339FFE4F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{3E3E5CBA-CF07-A54E-AB02-635B5E80CC27}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{634E96D1-4126-13F4-9522-A546B7FD78C5}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{0D9E8B19-A48E-2C9B-2E24-E537BD09EF75}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
