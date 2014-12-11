@@ -1,0 +1,2 @@
+#!/bin/sh
+pl -L128m -G128m -T64m -s main_swi.pl
